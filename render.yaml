@@ -21,6 +21,8 @@ services:
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
     envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
       - key: VITE_API_URL
         value: https://ai-resume-analyzer-job-match-api.onrender.com/api
     routes:
