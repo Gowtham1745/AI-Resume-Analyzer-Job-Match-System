@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Bot, Mail, GitBranch, Shield } from 'lucide-react'
 
 const keerthanaPhoto = 'https://raw.githubusercontent.com/Gowtham1745/AI-Resume-Analyzer-Job-Match-System/main/KEERTHANA%20PROFILE%20PIC.jpeg'
+const gowthamPhoto = 'https://github.com/Gowtham1745.png'
 
 export function Footer() {
   return (
@@ -48,7 +49,7 @@ export function Footer() {
           <div className="text-center max-w-3xl mx-auto mb-7">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-600 dark:text-primary-400">Project Team</p>
             <h3 id="team-credits-heading" className="mt-2 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Built with purpose. Delivered with care.</h3>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Project creation and deployment are credited separately to reflect each person's role.</p>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Project created by Keerthana. Website deployment and hosting by Gowtham A.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
@@ -70,12 +71,16 @@ export function Footer() {
             </article>
 
             <article className="flex items-center gap-4 rounded-2xl border border-accent-200 dark:border-accent-900/60 bg-white dark:bg-gray-950 p-5 shadow-sm">
-              <div className="h-20 w-20 rounded-full bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center ring-4 ring-accent-50 dark:ring-accent-900/20 flex-shrink-0" aria-hidden="true">
-                <Shield className="h-8 w-8 text-accent-600 dark:text-accent-400" />
-              </div>
+              <img
+                src={gowthamPhoto}
+                alt="Gowtham A profile"
+                className="h-20 w-20 rounded-full object-cover object-center ring-4 ring-accent-50 dark:ring-accent-900/20 flex-shrink-0"
+                loading="lazy"
+                onError={(event) => { event.currentTarget.style.display = "none" }}
+              />
               <div className="min-w-0">
                 <p className="text-xs font-semibold uppercase tracking-wider text-accent-600 dark:text-accent-400">Deployment & Hosting</p>
-                <h4 className="mt-1 text-xl font-bold text-gray-900 dark:text-white">Gowtham</h4>
+                <h4 className="mt-1 text-xl font-bold text-gray-900 dark:text-white">Gowtham A</h4>
                 <a href="mailto:gowthamgo1745@gmail.com" className="mt-1 inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 break-all">
                   <Mail className="h-4 w-4 flex-shrink-0" /> gowthamgo1745@gmail.com
                 </a>
