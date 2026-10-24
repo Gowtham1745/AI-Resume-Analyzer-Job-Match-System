@@ -1,114 +1,92 @@
 import { Link } from 'react-router-dom'
 import { Bot, Mail, GitBranch, User, MessageSquare, Zap, Shield } from 'lucide-react'
 
+const keerthanaPhoto = '/KEERTHANA%20PROFILE%20PIC.jpeg'
+
 export function Footer() {
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 text-xl font-bold gradient-text mb-4">
               <Bot className="w-8 h-8" />
               AI Resume Analyzer
             </Link>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-              Empowering job seekers with AI-powered resume analysis and intelligent job matching.
-              Built with precision to help you land your dream job.
+              Resume insights and job matching to help candidates prepare clearer, more relevant applications.
             </p>
           </div>
 
-          {/* Product Links */}
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Product</h4>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Explore</h4>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li><Link to="/analyze" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Resume Analysis</Link></li>
-              <li><Link to="/jobs" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Job Matching</Link></li>
-              <li><Link to="/about" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">How It Works</Link></li>
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Pricing</a></li>
+              <li><Link to="/" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About the Project</Link></li>
             </ul>
           </div>
 
-          {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a></li>
-            </ul>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Project Repository</h4>
+            <a href="https://github.com/Gowtham1745/AI-Resume-Analyzer-Job-Match-System" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+              <GitBranch className="w-4 h-4" /> View source on GitHub
+            </a>
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
+              Questions about the project? Contact the project creator or deployment engineer below.
+            </p>
           </div>
 
-          {/* Legal & Social */}
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Legal & Social</h4>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-4">
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Cookie Policy</a></li>
-            </ul>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="GitHub">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="LinkedIn">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="Twitter">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="mailto:keerselva595@gmail.com" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="Email">
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Contact</h4>
+            <a href="mailto:keerselva595@gmail.com" className="block text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 break-all">keerselva595@gmail.com</a>
+            <a href="mailto:gowthamgo1745@gmail.com" className="mt-2 block text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 break-all">gowthamgo1745@gmail.com</a>
           </div>
         </div>
 
-        {/* Team Credits & Copyright */}
-        <div className="pt-8 border-t border-gray-100 dark:border-gray-800">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* Team Credits */}
-            <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
-              <div className="flex items-center gap-4 p-3 rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-900/30">
-                <div className="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center">
-                  <Bot className="w-6 h-6 text-primary-600 dark:text-primary-400" />
-                </div>
-                <div className="text-left">
-                  <p className="font-medium text-primary-700 dark:text-primary-300">Created by Keerthana</p>
-                  <p className="text-xs text-primary-600 dark:text-primary-400">Project Creator & Developer</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 p-3 rounded-xl bg-accent-50 dark:bg-accent-900/20 border border-accent-100 dark:border-accent-900/30">
-                <div className="w-12 h-12 rounded-full bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-accent-600 dark:text-accent-400" />
-                </div>
-                <div className="text-left">
-                  <p className="font-medium text-accent-700 dark:text-accent-300">Deployed by Gowtham</p>
-                  <p className="text-xs text-accent-600 dark:text-accent-400">Deployment Engineer</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Copyright & Contact */}
-            <div className="flex flex-col items-center gap-2 text-center md:text-right">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                © 2024 AI Resume Analyzer. All rights reserved.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
-                <a href="mailto:keerselva595@gmail.com" className="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-1">
-                  <Mail className="w-3.5 h-3.5" />
-                  keerselva595@gmail.com
-                </a>
-                <span className="text-gray-400">·</span>
-                <a href="mailto:gowthamgo1745@gmail.com" className="text-accent-600 dark:text-accent-400 hover:underline flex items-center gap-1">
-                  <Zap className="w-3.5 h-3.5" />
-                  gowthamgo1745@gmail.com
-                </a>
-              </div>
-            </div>
+        <section aria-labelledby="team-credits-heading" className="pt-8 border-t border-gray-200 dark:border-gray-800">
+          <div className="text-center max-w-3xl mx-auto mb-7">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-600 dark:text-primary-400">Project Team</p>
+            <h3 id="team-credits-heading" className="mt-2 text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Built with purpose. Delivered with care.</h3>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Project creation and deployment are credited separately to reflect each person's role.</p>
           </div>
-        </div>
+
+          <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+            <article className="flex items-center gap-4 rounded-2xl border border-primary-200 dark:border-primary-900/60 bg-white dark:bg-gray-950 p-5 shadow-sm">
+              <img
+                src={keerthanaPhoto}
+                alt="Keerthana profile"
+                className="h-20 w-20 rounded-full object-cover object-center ring-4 ring-primary-100 dark:ring-primary-900/40 flex-shrink-0"
+                loading="lazy"
+                onError={(event) => { event.currentTarget.style.display = 'none' }}
+              />
+              <div className="min-w-0">
+                <p className="text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400">Project Creator & Developer</p>
+                <h4 className="mt-1 text-xl font-bold text-gray-900 dark:text-white">Keerthana</h4>
+                <a href="mailto:keerselva595@gmail.com" className="mt-1 inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 break-all">
+                  <Mail className="h-4 w-4 flex-shrink-0" /> keerselva595@gmail.com
+                </a>
+              </div>
+            </article>
+
+            <article className="flex items-center gap-4 rounded-2xl border border-accent-200 dark:border-accent-900/60 bg-white dark:bg-gray-950 p-5 shadow-sm">
+              <div className="h-20 w-20 rounded-full bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center ring-4 ring-accent-50 dark:ring-accent-900/20 flex-shrink-0" aria-hidden="true">
+                <Shield className="h-8 w-8 text-accent-600 dark:text-accent-400" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-xs font-semibold uppercase tracking-wider text-accent-600 dark:text-accent-400">Deployment & Hosting</p>
+                <h4 className="mt-1 text-xl font-bold text-gray-900 dark:text-white">Gowtham</h4>
+                <a href="mailto:gowthamgo1745@gmail.com" className="mt-1 inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 break-all">
+                  <Mail className="h-4 w-4 flex-shrink-0" /> gowthamgo1745@gmail.com
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-7 text-center">
+            <p className="text-xs text-gray-500 dark:text-gray-500">© {new Date().getFullYear()} AI Resume Analyzer & Job Match System</p>
+          </div>
+        </section>
       </div>
     </footer>
   )
