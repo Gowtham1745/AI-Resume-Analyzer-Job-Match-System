@@ -10,10 +10,6 @@ interface Toast {
   duration?: number
 }
 
-interface ToasterProps {
-  position?: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left'
-}
-
 export function useToast() {
   const [toasts, setToasts] = useState<Toast[]>([])
 
