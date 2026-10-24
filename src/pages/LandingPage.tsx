@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Sparkles, Upload, ArrowRight, Bot, Brain, Target, BarChart2, Zap, Shield, Users, Search, TrendingUp } from 'lucide-react'
+import { Sparkles, Upload, ArrowRight, Brain, Target, BarChart2, Zap, Shield, Users, Search, TrendingUp } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 import { Badge } from '../components/ui/Badge'
