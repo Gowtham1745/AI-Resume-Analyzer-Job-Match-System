@@ -188,6 +188,39 @@ export function LandingPage() {
         </div>
       </section>
 
+
+      {/* Project Team Credits */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-950">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600 dark:text-primary-400 mb-3">The People Behind the Project</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Created by Keerthana. Deployed by Gowtham.</h2>
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Project creation and deployment are credited separately to reflect each person's role.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <article className="flex items-center gap-5 rounded-2xl border border-primary-200 dark:border-primary-900/60 bg-gray-50 dark:bg-gray-900 p-6 shadow-sm">
+              <img src="/KEERTHANA%20PROFILE%20PIC.jpeg" alt="Keerthana profile photo" loading="lazy" className="w-24 h-24 rounded-2xl object-cover object-center flex-shrink-0 ring-4 ring-primary-100 dark:ring-primary-900/40" />
+              <div className="min-w-0">
+                <p className="text-xs uppercase tracking-wider font-semibold text-primary-600 dark:text-primary-400">Project Creator & Developer</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-1">Keerthana</h3>
+                <a className="mt-2 inline-block text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 break-all" href="mailto:keerselva595@gmail.com">keerselva595@gmail.com</a>
+              </div>
+            </article>
+            <article className="flex items-center gap-5 rounded-2xl border border-accent-200 dark:border-accent-900/60 bg-gray-50 dark:bg-gray-900 p-6 shadow-sm">
+              <div className="w-24 h-24 rounded-2xl bg-accent-100 dark:bg-accent-900/30 flex items-center justify-center flex-shrink-0 ring-4 ring-accent-50 dark:ring-accent-900/20"><Shield className="w-10 h-10 text-accent-600 dark:text-accent-400" /></div>
+              <div className="min-w-0">
+                <p className="text-xs uppercase tracking-wider font-semibold text-accent-600 dark:text-accent-400">Deployment & Hosting Engineer</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-1">Gowtham</h3>
+                <a className="mt-2 inline-block text-sm text-gray-600 dark:text-gray-300 hover:text-accent-600 break-all" href="mailto:gowthamgo1745@gmail.com">gowthamgo1745@gmail.com</a>
+              </div>
+            </article>
+          </div>
+          <div className="text-center mt-7">
+            <Link to="/about" className="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">Learn more about the project and team →</Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
