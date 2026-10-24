@@ -56,30 +56,26 @@ const features = [
 const team = [
   {
     name: 'Keerthana',
-    role: 'Project Creator & Lead Developer',
+    role: 'Project Creator & Developer',
     email: 'keerselva595@gmail.com',
-    avatar: 'K',
+    image: '/KEERTHANA%20PROFILE%20PIC.jpeg',
     color: 'bg-primary-500',
     contributions: [
-      'Core AI analysis engine',
-      'Resume parsing & NLP pipeline',
-      'Job matching algorithms',
-      'Frontend architecture & UI/UX',
-      'Project planning & design',
+      'Original project concept and direction',
+      'Website development and interface design',
+      'Resume analysis and job-matching project work',
     ],
   },
   {
     name: 'Gowtham',
-    role: 'Deployment & Infrastructure Engineer',
+    role: 'Deployment & Hosting Engineer',
     email: 'gowthamgo1745@gmail.com',
     avatar: 'G',
     color: 'bg-accent-500',
     contributions: [
-      'CI/CD pipeline setup',
-      'Cloud infrastructure (AWS/Vercel)',
-      'Database optimization',
-      'Monitoring & logging',
-      'Security & compliance',
+      'Deployment and hosting setup',
+      'Release configuration and deployment troubleshooting',
+      'Helping prepare the website for public access',
     ],
   },
 ]
@@ -213,9 +209,13 @@ export function AboutPage() {
               <Card key={index} className="overflow-hidden">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-6 mb-6">
-                    <div className={cn('w-20 h-20 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0', member.color)}>
-                      {member.avatar}
-                    </div>
+                    {member.image ? (
+                      <img src={member.image} alt={`${member.name} profile`} loading="lazy" className="w-20 h-20 rounded-2xl object-cover object-center flex-shrink-0 ring-4 ring-primary-100 dark:ring-primary-900/30" onError={(event) => { event.currentTarget.style.display = 'none' }} />
+                    ) : (
+                      <div className={cn('w-20 h-20 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0', member.color)}>
+                        {member.avatar}
+                      </div>
+                    )}
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{member.name}</h3>
                       <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">{member.role}</p>
