@@ -178,7 +178,7 @@ export function LandingPage() {
                   <item.icon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{item.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
+                <p className="text-gray-600 dark:text-gray-400">{item.description}</p>
                 {index < 3 && (
                   <div className="absolute top-8 right-0 w-full h-0.5 bg-gradient-to-r from-primary-200 to-transparent hidden md:block" />
                 )}
@@ -199,7 +199,7 @@ export function LandingPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <article className="flex items-center gap-5 rounded-2xl border border-primary-200 dark:border-primary-900/60 bg-gray-50 dark:bg-gray-900 p-6 shadow-sm">
-              <img src="/KEERTHANA%20PROFILE%20PIC.jpeg" alt="Keerthana profile photo" loading="lazy" className="w-24 h-24 rounded-2xl object-cover object-center flex-shrink-0 ring-4 ring-primary-100 dark:ring-primary-900/40" />
+              <img src="https://raw.githubusercontent.com/Gowtham1745/AI-Resume-Analyzer-Job-Match-System/main/KEERTHANA%20PROFILE%20PIC.jpeg" alt="Keerthana profile photo" loading="lazy" className="w-24 h-24 rounded-2xl object-cover object-center flex-shrink-0 ring-4 ring-primary-100 dark:ring-primary-900/40" />
               <div className="min-w-0">
                 <p className="text-xs uppercase tracking-wider font-semibold text-primary-600 dark:text-primary-400">Project Creator & Developer</p>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-1">Keerthana</h3>
