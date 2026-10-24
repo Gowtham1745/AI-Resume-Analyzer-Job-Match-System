@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Bot, Mail, GitBranch, Shield } from 'lucide-react'
+import { Bot, Mail, GitBranch } from 'lucide-react'
 
 const keerthanaPhoto = 'https://raw.githubusercontent.com/Gowtham1745/AI-Resume-Analyzer-Job-Match-System/main/KEERTHANA%20PROFILE%20PIC.jpeg'
 const gowthamPhoto = 'https://github.com/Gowtham1745.png'
