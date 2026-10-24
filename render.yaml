@@ -11,8 +11,6 @@ services:
         value: 3.11.9
       - key: ALLOWED_ORIGINS
         value: https://ai-resume-analyzer-job-match.onrender.com
-      - key: OPENAI_API_KEY
-        sync: false
 
   - type: web
     name: ai-resume-analyzer-job-match
