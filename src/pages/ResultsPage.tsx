@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { 
   ArrowLeft, Download, RefreshCw, CheckCircle, AlertCircle, 
-  Target, TrendingUp, Lightbulb, FileText, Briefcase, 
+  Target, Lightbulb, FileText, Briefcase, 
   Star, Award, Brain, Search, X 
 } from 'lucide-react'
 import { Button } from '../components/ui/Button'
@@ -13,7 +13,7 @@ import { Spinner } from '../components/ui/Spinner'
 import { useToast } from '../hooks/useToast'
 import { cn, formatDate, getScoreColor, getScoreBg } from '../lib/utils'
 import { resumeApi } from '../lib/api'
-import type { ResumeAnalysis, SectionScore, Suggestion, JobMatch } from '../lib/types'
+import type { ResumeAnalysis } from '../lib/types'
 
 export function ResultsPage() {
   const { analysisId } = useParams<{ analysisId: string }>()
@@ -112,7 +112,7 @@ export function ResultsPage() {
     { id: 'sections', label: 'Sections', icon: Target },
     { id: 'keywords', label: 'Keywords', icon: Search },
     { id: 'suggestions', label: 'Suggestions', icon: Lightbulb },
-  ]
+  ] as const
 
   return (
     <div className="pt-16 pb-8 px-4 sm:px-6 lg:px-8">
@@ -512,7 +512,7 @@ function KeywordsPanel({ analysis }: { analysis: ResumeAnalysis }) {
                     <span className="font-medium text-gray-900 dark:text-white">{keyword}</span>
                     <span className="text-gray-500 dark:text-gray-400">{(density * 100).toFixed(1)}%</span>
                   </div>
-                  <Progress value={density * 100} max={100} size="sm" variant="primary" />
+                  <Progress value={density * 100} max={100} size="sm" variant="default" />
                 </div>
               ))}
           </div>
