@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { Bot, Mail, GitBranch, User, MessageSquare, Zap, Shield } from 'lucide-react'
+import { Bot, Mail, GitBranch, Shield } from 'lucide-react'
 
-const keerthanaPhoto = '/KEERTHANA%20PROFILE%20PIC.jpeg'
+const keerthanaPhoto = 'https://raw.githubusercontent.com/Gowtham1745/AI-Resume-Analyzer-Job-Match-System/main/KEERTHANA%20PROFILE%20PIC.jpeg'
 
 export function Footer() {
   return (
