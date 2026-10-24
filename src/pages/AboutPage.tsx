@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { 
   Bot, Shield, Zap, Brain, Target, Users, 
   CheckCircle, ArrowRight, Heart, Code, 
-  Server, Globe, Mail, Github, Linkedin, Twitter
+  Server, Globe, Mail, GitBranch
 } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { Card, CardContent } from '../components/ui/Card'
@@ -268,13 +268,13 @@ export function AboutPage() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <a href="https://github.com" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="GitHub">
-              <Github className="w-6 h-6" />
+              <GitBranch className="w-6 h-6" />
             </a>
             <a href="https://linkedin.com" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="LinkedIn">
-              <Linkedin className="w-6 h-6" />
+              <Users className="w-6 h-6" />
             </a>
             <a href="https://twitter.com" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="Twitter">
-              <Twitter className="w-6 h-6" />
+              <Globe className="w-6 h-6" />
             </a>
             <a href="mailto:keerselva595@gmail.com" className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="Email">
               <Mail className="w-6 h-6" />
