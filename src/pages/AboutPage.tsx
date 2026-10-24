@@ -58,7 +58,7 @@ const team = [
     name: 'Keerthana',
     role: 'Project Creator & Developer',
     email: 'keerselva595@gmail.com',
-    image: '/KEERTHANA%20PROFILE%20PIC.jpeg',
+    image: 'https://raw.githubusercontent.com/Gowtham1745/AI-Resume-Analyzer-Job-Match-System/main/KEERTHANA%20PROFILE%20PIC.jpeg',
     color: 'bg-primary-500',
     contributions: [
       'Original project concept and direction',
